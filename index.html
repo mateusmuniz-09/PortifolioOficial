@@ -13,7 +13,7 @@
 
 <body>
 
-    <header>
+    <header id="header">
         <div class="interface">
             <div class="logo">
                 <a href="#">
@@ -22,15 +22,15 @@
             </div>
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#topo">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="#">
+                <a href="#contatos">
                     <button>Contato</button>
                 </a>
             </div><!--btn-contato-->
@@ -45,11 +45,11 @@
 
                 <nav>
                     <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Especialidades</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Contato</a></li>
+                        <li><a href="#topo">Início</a></li>
+                        <li><a href="#especialidades">Especialidades</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contatos">Contato</a></li>
                     </ul>
                 </nav>
 
@@ -60,7 +60,7 @@
 
     </header>
 
-    <main>
+    <main id="topo">
         <section class="topo-do-site">
             <div class="inteface">
                 <div class="flex">
@@ -81,7 +81,7 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--topo-site-->
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
                 <div class="flex">
@@ -103,7 +103,7 @@
                 </div>
             </div>
         </section>
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -114,15 +114,15 @@
                         <p>Sou Mateus Muniz, apaixonado por tecnologia e inovação. Com uma visão criativa e focada em resultados, me especializo em transformar ideias em soluções digitais impactantes. Acredito que o design e a funcionalidade devem caminhar juntos para criar experiências únicas que conectam marcas ao seu público.</p>
                         <p>Minha missão é usar a tecnologia para simplificar e otimizar processos, trazendo soluções práticas e eficientes. Sempre em busca de novas oportunidades de aprender e evoluir, estou comprometido em entregar resultados excepcionais e superar as expectativas dos meus clientes.</p>
                         <div class="btn-social">
-                            <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                            <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
-                            <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://www.instagram.com/muniz09muniz?igsh=MWQ2cXhmYjZjNDJjMw==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <button id="zap2"><i class="bi bi-whatsapp"></i></button>
+                            <a href="https://www.linkedin.com/in/francisco-mateus-de-oliveira-muniz-554333233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
                         </div><!--btn-social-->
                     </div><!--txt-sobre-->
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="projetos">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -132,14 +132,14 @@
                     <div class="img-port" style="background-image: url(assets/img/projeto2.png);">
                         <div class="overlay">Projeto 2</div>
                     </div>
-                    <div class="img-port" style="background-image: url(assets/img/projeto3.png);">
+                    <div class="img-port" style="background-image: url(assets/img/projeto-Tualizado.png);">
                         <div class="overlay">Projeto 3</div>
                     </div>
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--portfolio-->
 
-        <section class="formulario">
+        <section class="formulario" id="contatos">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
@@ -161,12 +161,12 @@
             <div class="line-footer">
                 <div class="flex">
                     <div class="logo-footer">
-                        <img src="assets/img/logo.png" alt="Logotipo">
+                       <a href="#header"><img src="assets/img/logo.png" alt="Logotipo"></a>
                     </div><!--logo-footer-->
                     <div class="btn-social">
-                        <a href="#"><button><i class="bi bi-instagram"></i></button></a>
-                        <a href="#"><button><i class="bi bi-youtube"></i></button></a>
-                        <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://www.instagram.com/muniz09muniz?igsh=MWQ2cXhmYjZjNDJjMw==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <button id="zap"><i class="bi bi-whatsapp"></i></button>
+                        <a href="https://www.linkedin.com/in/francisco-mateus-de-oliveira-muniz-554333233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
                     </div><!--btn-social-->
                 </div>
             </div><!--line-footer-->
@@ -179,6 +179,7 @@
         
     </footer>
 <script src="assets/script/script.js"></script>
+<script src="assets/script/enviar-mensagen.js"></script>
 </body>
 
 </html>

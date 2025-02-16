@@ -201,6 +201,7 @@ animation: flutuar 2s ease-in-out infinite alternate;
 /* ESTILO DAS ESPECIALIDADES */
 section.especialidades {
     padding: 40px 4%;
+    transition: 2s;
 }
 
 section.especialidades .flex {
@@ -402,7 +403,7 @@ footer .line-footer p a {
   .signature span{
     color: #00b9db;
   }
-
+ 
 
 
   @media screen and (max-width: 1020px) {
