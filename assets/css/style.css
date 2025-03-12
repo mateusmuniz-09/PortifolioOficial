@@ -13,8 +13,106 @@ body{
     background-color: #000;
     height: 100vh;
 }
+
+/* //////////////////////slide///////////////////// */
+
+.servicos {
+    text-align: center;
+    padding: 10px 6%;
+    max-width: 1800px;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+.servicos h2{
+    margin: 50px 0;
+   padding: 20px 10px;
+   color: #fff;
+}
+
+.servicos button{
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00b9db;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    margin-top: 50px;
+
+ }
+
+ .servicos button:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 12px #00b9db;
+ }
+
+.swiper {
+    width: 100%;
+    padding: 20px 0;
+    height: 400px;
+
+
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    padding: 30px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: .3s;
+    
+   
+    
+}
+
+.swiper-slide:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.swiper-slide h3{
+font-size: 20px;
+padding: 15px 0;
+color: #fff;
+}
+
+.swiper-slide p{
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    text-align: justify;
+
+        }
+
+        .swiper-slide i{
+            font-size: 60px;
+            color: #00b9db;
+        
+                }
+
+               
+                .swiper-pagination-bullet{
+                    background-color: #fff;
+                }
+
+
+
+
+
+
+/* //////////////////////slide///////////////////// */
+
+
+
 .interface {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 200px; 
 }
 
@@ -52,17 +150,45 @@ form .btn-enviar input:hover {
 
 /* /////// ESTILO CABEÇALHO \\\\\\*/
 header{
-    padding: 20px 2%;
-    box-shadow: 0 4px 10px #00b9db,
-              0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 5px 2%;
+    box-shadow: 0 5px 15px #00badb80;
+    height: 100px;
+    width: 100%;
+    z-index: 10;
+    transition: 1s;
+    
 }
-header>.interface{
+header.rolagem{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #000000af;
+
+}
+
+
+
+
+header .logo{
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+header .logo a img{
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header .interface{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0;
 }
 header a{
-    color: #ffffff4d;
+    color: #ffffffbd;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
@@ -97,7 +223,7 @@ header nav.menu-desktop ul li {
     background-color: #000;
     height: 100vh;
     position: fixed;
-    top: 0;
+    top: 100px;
     right: 0;
     z-index: 99999;
     width: 0%;
@@ -106,7 +232,7 @@ header nav.menu-desktop ul li {
 }
 
 .menu-mobile.abrir-menu{
-    width: 70%;
+    width: 50%;
 }
 
 .menu-mobile.abrir-menu ~ .overlay-menu{
@@ -145,7 +271,7 @@ header nav.menu-desktop ul li {
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 0;
     z-index: 88888;
     display: none;
@@ -158,6 +284,12 @@ header nav.menu-desktop ul li {
 section.topo-do-site {
     padding: 40px 10%;
     text-align: center;
+    justify-content: center;
+}
+section.topo-do-site .interface {
+   display: flex;
+   justify-content: center;
+   text-align: center;
 }
 section.topo-do-site.flex{
     align-items: center;
@@ -174,16 +306,26 @@ section.topo-do-site.flex{
 .topo-do-site .txt-topo-site p {
     width: 80%;
     color: #fff;
-    text-align: center;
+    text-align: justify;
     font-size: 18px;
     padding: 40px 4%;
-    margin-left: 10%;
-    
+
+}
+.topo-do-site .txt-topo-site{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .topo-do-site .img-topo-site img {
-position: relative;
+position:relative;
+width: 400px;
+height: 400px;
+object-fit: cover;
+border-radius: 50%;
 animation: flutuar 2s ease-in-out infinite alternate;
+box-shadow: 0 0 30px 5px #00b9db;
 }
 
 
@@ -192,7 +334,7 @@ animation: flutuar 2s ease-in-out infinite alternate;
         top: 0;
     }
     100%{
-        top:30px;
+        top:10px;
     }
    
 }
@@ -277,15 +419,22 @@ section.sobre .flex {
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
+    width: 100%;
+    gap: 20px;
+    
+   
 }
 
 .img-port {
-    width: 360px;
+    width: 400px;
     height: 460px;
     background-size: cover;
     background-position: 100% 0%;
@@ -293,7 +442,9 @@ section.portfolio .flex {
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    white-space: nowrap;
 }
+
 
 .img-port:hover {
     background-position: 100% 100%;
@@ -313,12 +464,11 @@ section.portfolio .flex {
     font-size: 24px;
     font-weight: 600;
     color: #fff;
-    opacity: 0;
+    opacity: 1;
     transition: .5s;
 }
-
 .overlay:hover {
-    opacity: 1;
+    opacity: 0;
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
@@ -403,15 +553,52 @@ footer .line-footer p a {
   .signature span{
     color: #00b9db;
   }
+  .logo-footer img{
+    width: 250px;
+    height: 250px;
+}
+
  
 
 
-  @media screen and (max-width: 1020px) {
+  @media screen and (max-width: 768px) {
+
+    .swiper {
+        width: 90%;
+        position: relative;
+       margin: auto;
+    }
+
+   
+    
+    .btn-abrir-menu span{
+    
+        width: 35px;
+        height: 5px;
+        background-color: #00b9db;
+        border-radius: 8px;
+        transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+        transform-origin: center;
+    }
+
+    .btn-abrir-menu.active span:nth-child(1){
+        transform: translateY(10px) rotate(360deg) rotate(45deg);
+    }
+    .btn-abrir-menu.active span:nth-child(2){
+        opacity: 0;
+    }
+    .btn-abrir-menu.active span:nth-child(3){
+        transform: translateY(-10px) rotate(-360deg) rotate(-45deg);
+    }
+
+
+
 
     /* /////// ESTILO CABEÇALHO \\\\\\*/
 
     header{
         padding: 0 4%;
+        height: 100px;
     }
 
     .menu-desktop,
@@ -422,9 +609,9 @@ footer .line-footer p a {
         margin: 0;
     }
     .interface .logo img{
-        width: 200px;
-        height: auto;
-        object-fit: contain;
+        width: 150px;
+        height: 100px;
+        object-fit: cover;
 
     }
     header .interface{
@@ -432,7 +619,9 @@ footer .line-footer p a {
     }
 
     .btn-abrir-menu{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
     }
 
 
@@ -445,7 +634,11 @@ footer .line-footer p a {
     }
 
     h2.titulo {
-        font-size: 30px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    h1 {
+        font-size: 20px;
         line-height: 30px;
     }
 
@@ -455,13 +648,20 @@ footer .line-footer p a {
     }
 
     section.topo-do-site {
-        padding: 20px 8%;
+        padding: 20px 1%;
     }
+
+    section.topo-do-site .txt-topo-site p {
+        padding: 20px 0;
+    }
+
     .topo-do-site h1 {
-        font-size: 30px;
+        font-size: 20px;
     }
     .topo-do-site .img-topo-site img {
-        width: 100%;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 12px #00b9db;
     }
      /* ESPECIALIDADES */
      section.especiliadades {
@@ -473,7 +673,7 @@ footer .line-footer p a {
     }
 
     .sobre .txt-sobre h2 {
-        font-size: 30px;
+        font-size: 20px;
         line-height: 35px;
         text-align: center;
     }
@@ -493,6 +693,7 @@ footer .line-footer p a {
 
     .img-port {
         width: 100%;
+        height: 200px;
         max-width: 360px;
         margin: 0 auto;
     }
@@ -509,6 +710,10 @@ footer .line-footer p a {
 
     footer .line-footer {
         text-align: center;
+    }
+    .logo-footer img{
+        width: 200px;
+        height: 200px;
     }
 
 

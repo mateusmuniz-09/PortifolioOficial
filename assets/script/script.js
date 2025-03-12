@@ -1,20 +1,15 @@
-const btdMenu = document.getElementById("btn-menu")
-const menuMobile = document.getElementById("menu-mobile")
-const overlay = document.getElementById('overlay-menu')
+const btdMenu = document.getElementById("btn-menu");
+const menuMobile = document.getElementById("menu-mobile");
+const overlay = document.getElementById("overlay-menu");
 
-btdMenu.addEventListener('click',()=>{
+btdMenu.addEventListener("click", () => {
+  menuMobile.classList.toggle("abrir-menu");
+  btdMenu.classList.toggle("active");
+});
 
-menuMobile.classList.add("abrir-menu")
-})
-
-menuMobile.addEventListener('click',()=>{
-
-    menuMobile.classList.remove("abrir-menu")
-
-})
- overlay.addEventListener('click',()=>{
-
-    menuMobile.classList.remove("abrir-menu")
-
-})
-
+menuMobile.addEventListener("click", () => {
+  menuMobile.classList.remove("abrir-menu");
+});
+overlay.addEventListener("click", () => {
+  menuMobile.classList.remove("abrir-menu");
+});

@@ -1,185 +1,361 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
     <!-- FIM BOOTSTRAP ICONS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Portifólio Mateus Muniz</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header id="header">
-        <div class="interface">
-            <div class="logo">
-                <a href="#">
-                    <img src="assets/img/logo.png" alt="logo">
-                </a>
-            </div>
-            <nav class="menu-desktop">
-                <ul>
-                    <li><a href="#topo">Início</a></li>
-                    <li><a href="#especialidades">Especialidades</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                </ul>
-            </nav>
+      <div class="interface">
+        <div class="logo">
+          <a href="#">
+            <img src="assets/img/logo-svg-2.svg" alt="logo" />
+          </a>
+        </div>
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#topo">Início</a></li>
+            <li><a href="#servicos">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav>
 
-            <div class="btn-contato">
-                <a href="#contatos">
-                    <button>Contato</button>
-                </a>
-            </div><!--btn-contato-->
-            <div class="btn-abrir-menu" id="btn-menu">
-                <i class="bi bi-list"></i>
-            </div>
+        <div class="btn-contato">
+          <a href="#contatos">
+            <button>Contato</button>
+          </a>
+        </div>
+        <!--btn-contato-->
+        <div class="btn-abrir-menu" id="btn-menu">
+          
+            <span></span><span></span><span></span>
+          
+        </div>
 
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <i class="bi bi-x-lg"></i>
-                </div>
+        <div class="menu-mobile" id="menu-mobile">
+          
 
-                <nav>
-                    <ul>
-                        <li><a href="#topo">Início</a></li>
-                        <li><a href="#especialidades">Especialidades</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#contatos">Contato</a></li>
-                    </ul>
-                </nav>
-
-            </div><!--menu-mobile-->
-            <div class="overlay-menu" id="overlay-menu"></div>
-
-        </div><!--interface-->
-
+          <nav>
+            <ul>
+              <li><a href="#topo">Início</a></li>
+              <li><a href="#servicos">Especialidades</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contatos">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
+      </div>
+      <!--interface-->
     </header>
 
     <main id="topo">
-        <section class="topo-do-site">
-            <div class="inteface">
-                <div class="flex">
-                    <div class="txt-topo-site">
-                        <h1>SUA VISÃO, NOSSA MISSÃO DIGITAL<span>.</span></h1>
-                        <p>Combinando criatividade e tecnologia, transformamos suas ideias em soluções impactantes, criando experiências digitais que conectam e geram resultados.</p>
+      <section class="topo-do-site">
+        <div class="inteface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>SUA VISÃO, <span>NOSSA MISSÃO DIGITAL</span>.</h1>
+              <p>
+                Combinando criatividade, inovação e tecnologia de ponta, transformamos suas ideias em soluções digitais impactantes. Nosso compromisso é criar experiências online que não apenas encantam, mas também conectam, engajam e geram resultados reais para o seu negócio.
+              </p>
 
-                        <div class="btn-contato">
-                            <a href="#">
-                                <button>Entre em contato</button>
-                            </a>
-                        </div>
-
-                    </div><!--txt-topo-site-->
-                    <div class="img-topo-site">
-                        <img src="assets/img/perfil.png" alt="">
-                    </div><!--img-topo-site-->
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--topo-site-->
-        <section class="especialidades" id="especialidades">
-            <div class="interface">
-                <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
-                <div class="flex">
-                    <div class="especialidades-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Website</h3>
-                        <p>Desenvolvimento de websites personalizados, focados em design moderno, usabilidade e performance. Criamos soluções digitais que atendem às suas necessidades, garantindo uma experiência online única e eficiente.</p>
-                    </div>
-                    <div class="especialidades-box">
-                            <i class="bi bi-cart"></i>
-                            <h3>Loja online</h3>
-                            <p>Criamos lojas online funcionais e atrativas, com foco na experiência do usuário e otimização para conversões. Nossa solução integra design, segurança e facilidade de navegação, proporcionando uma jornada de compra única e eficiente.</p>
-                    </div><!--especialidades-box-->
-                    <div class="especialidades-box">
-                        <i class="bi bi-filetype-html"></i>
-                        <h3>Landing pages</h3>
-                        <p>Criamos lojas online funcionais e atrativas, com foco na experiência do usuário e otimização para conversões. Nossa solução integra design, segurança e facilidade de navegação, proporcionando uma jornada de compra única e eficiente.</p>
-                    </div><!--especialidades-box-->
-                </div>
+              <div class="btn-contato">
+                <a href="https://wa.me/+5588981252883?text=Ol%C3%A1%20MM%20TecSolutions,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank">
+                  <button>Entre em contato</button>
+                </a>
+              </div>
             </div>
-        </section>
-        <section class="sobre" id="sobre">
-            <div class="interface">
-                <div class="flex">
-                    <div class="img-sobre">
-                        <img src="assets/img/sobre.png" alt="sobre-mim">
-                    </div>
-                    <div class="txt-sobre">
-                        <h2 class="titulo">MUITO PRAZER, <span>SOU MATEUS MUNIZ.</span></h2>
-                        <p>Sou Mateus Muniz, apaixonado por tecnologia e inovação. Com uma visão criativa e focada em resultados, me especializo em transformar ideias em soluções digitais impactantes. Acredito que o design e a funcionalidade devem caminhar juntos para criar experiências únicas que conectam marcas ao seu público.</p>
-                        <p>Minha missão é usar a tecnologia para simplificar e otimizar processos, trazendo soluções práticas e eficientes. Sempre em busca de novas oportunidades de aprender e evoluir, estou comprometido em entregar resultados excepcionais e superar as expectativas dos meus clientes.</p>
-                        <div class="btn-social">
-                            <a href="https://www.instagram.com/muniz09muniz?igsh=MWQ2cXhmYjZjNDJjMw==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                            <button id="zap2"><i class="bi bi-whatsapp"></i></button>
-                            <a href="https://www.linkedin.com/in/francisco-mateus-de-oliveira-muniz-554333233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                        </div><!--btn-social-->
-                    </div><!--txt-sobre-->
-                </div>
+            <!--txt-topo-site-->
+            <div class="img-topo-site">
+              <img src="assets/img/perfil2.jpg" alt="" />
             </div>
-        </section>
-        <section class="portfolio" id="projetos">
-            <div class="interface">
-                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
-                <div class="flex">
-                    <div class="img-port" style="background-image: url(assets/img/projeto1.png);">
-                        <div class="overlay">Projeto 1</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(assets/img/projeto2.png);">
-                        <div class="overlay">Projeto 2</div>
-                    </div>
-                    <div class="img-port" style="background-image: url(assets/img/projeto-Tualizado.png);">
-                        <div class="overlay">Projeto 3</div>
-                    </div>
-                </div><!--flex-->
-            </div><!--interface-->
-        </section><!--portfolio-->
+            <!--img-topo-site-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--topo-site-->
 
-        <section class="formulario" id="contatos">
-            <div class="interface">
-                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+      <section class="servicos" id="servicos">
+        <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <i class="bi bi-code-square"></i>
+              <h3>Website</h3>
+              <p>
+                Desenvolvimento de websites personalizados, focados em design
+                moderno, usabilidade e performance. Criamos soluções digitais
+                que atendem às suas necessidades, garantindo uma experiência
+                online única e eficiente.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <i class="bi bi-cart"></i>
+              <h3>Loja Online</h3>
+              <p>
+                Criamos lojas online funcionais e atrativas, com foco na
+                experiência do usuário e otimização para conversões. Nossa
+                solução integra design, segurança e facilidade de navegação,
+                proporcionando uma jornada de compra única e eficiente.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <i class="bi bi-filetype-html"></i>
+              <h3>Landing Pages</h3>
+              <p>
+                Criamos lojas online funcionais e atrativas, com foco na
+                experiência do usuário e otimização para conversões. Nossa
+                solução integra design, segurança e facilidade de navegação,
+                proporcionando uma jornada de compra única e eficiente.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <i class="bi bi-building"></i>
+              <h3>Sites Institucionais</h3>
+              <p>
+                Desenvolvemos sites institucionais modernos e personalizados,
+                focados em fortalecer a presença digital da sua empresa. Criamos
+                plataformas intuitivas, seguras e otimizadas, garantindo uma
+                comunicação clara e profissional com seus clientes e parceiros.
+              </p>
+            </div>
+          </div>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu celular:">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                </form>
-            </div><!--interface-->
-        </section><!--formulario-->
+          <!-- Botões de navegação -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
 
+          <!-- Paginação -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <a href="https://wa.me/+5588981252883?text=Ol%C3%A1%20MM%20TecSolutions,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank""><button>Agende uma reunião</button></a>
+      </section>
 
+      <!-- <section class="especialidades" id="especialidades">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-code-square"></i>
+              <h3>Website</h3>
+              <p>
+                Desenvolvimento de websites personalizados, focados em design
+                moderno, usabilidade e performance. Criamos soluções digitais
+                que atendem às suas necessidades, garantindo uma experiência
+                online única e eficiente.
+              </p>
+            </div>
+            <div class="especialidades-box">
+              <i class="bi bi-cart"></i>
+              <h3>Loja online</h3>
+              <p>
+                Criamos lojas online funcionais e atrativas, com foco na
+                experiência do usuário e otimização para conversões. Nossa
+                solução integra design, segurança e facilidade de navegação,
+                proporcionando uma jornada de compra única e eficiente.
+              </p>
+            </div>
+            
+            <div class="especialidades-box">
+              <i class="bi bi-filetype-html"></i>
+              <h3>Landing pages</h3>
+              <p>
+                Criamos lojas online funcionais e atrativas, com foco na
+                experiência do usuário e otimização para conversões. Nossa
+                solução integra design, segurança e facilidade de navegação,
+                proporcionando uma jornada de compra única e eficiente.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <section class="sobre" id="sobre">
+        <div class="interface">
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="assets/img/sobre.png" alt="sobre-mim" />
+            </div>
+            <div class="txt-sobre">
+              <h2 class="titulo">
+                MUITO PRAZER, <span>SOU MATEUS MUNIZ.</span>
+              </h2>
+              <p>
+                Sou Mateus Muniz, apaixonado por tecnologia e inovação. Com uma
+                visão criativa e focada em resultados, me especializo em
+                transformar ideias em soluções digitais impactantes. Acredito
+                que o design e a funcionalidade devem caminhar juntos para criar
+                experiências únicas que conectam marcas ao seu público.
+              </p>
+              <p>
+                Minha missão é usar a tecnologia para simplificar e otimizar
+                processos, trazendo soluções práticas e eficientes. Sempre em
+                busca de novas oportunidades de aprender e evoluir, estou
+                comprometido em entregar resultados excepcionais e superar as
+                expectativas dos meus clientes.
+              </p>
+              <div class="btn-social">
+                <a
+                  href="https://www.instagram.com/muniz09muniz?igsh=MWQ2cXhmYjZjNDJjMw=="
+                  target="_blank"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+                <a href="https://wa.me/+5588981252883?text=Ol%C3%A1%20MM%20TecSolutions,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" target="_blank""><button id="zap2"><i class="bi bi-whatsapp"></i></button></a>
+                <a
+                  href="https://www.linkedin.com/in/francisco-mateus-de-oliveira-muniz-554333233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                  target="_blank"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+              </div>
+              <!--btn-social-->
+            </div>
+            <!--txt-sobre-->
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="projetos">
+        <div class="interface">
+          <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+          <div class="flex div-portifolio">
+            <div
+              class="img-port"
+              style="background-image: url(assets/img/projeto6.png)"
+            >
+              <a href="https://melhoresuasaude.netlify.app/" target="_blank"><div class="overlay"><p>Projeto 1</p></div></a>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(assets/img/espetinho.png)"
+            >
+              <a href="https://cardapioespetinho.netlify.app/" target="_blank"><div class="overlay">Projeto 2</div></a>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(assets/img/projeto-Tualizado.png)"
+            >
+             <a href="https://cardapiodigitalburguer.netlify.app/" target="_blank"> <div class="overlay">Projeto 3</div></a>
+            </div>
+            <div
+            class="img-port"
+            style="background-image: url(assets/img/projeto5.png)"
+          >
+           <a href="https://listatarefasdiarias.netlify.app/" target="_blank"> <div class="overlay">Projeto 4</div></a>
+          </div>
+          <div
+          class="img-port"
+          style="background-image: url(assets/img/projeto1.png)"
+        >
+         <a href="https://cardapiodigitalhamburguer.netlify.app/" target="_blank"> <div class="overlay">Projeto 5</div></a>
+        </div>
+        <div
+        class="img-port"
+        style="background-image: url(assets/img/projeto2.png)"
+      >
+        <a href="https://serranet.netlify.app/" target="_blank"><div class="overlay">Projeto 6</div></a>
+      </div>
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--portfolio-->
+
+      <section class="formulario" id="contatos">
+        <div class="interface">
+          <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+          <form action="">
+            <input
+              type="text"
+              name=""
+              id="nome"
+              placeholder="Seu nome completo:"
+            />
+            <input
+              type="text"
+              name=""
+              id="email"
+              placeholder="Seu e-mail:"
+              
+            />
+            <input type="text" name="" id="contato" placeholder="Seu celular:" />
+            <textarea
+              name=""
+              id="texto"
+              placeholder="Sua mensagem"
+              
+            ></textarea>
+            <div class="btn-enviar" id="btn-enviar"><input type="submit" value="ENVIAR" /></div>
+          </form>
+        </div>
+        <!--interface-->
+      </section>
+      <!--formulario-->
     </main>
 
     <footer>
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="logo-footer">
-                       <a href="#header"><img src="assets/img/logo.png" alt="Logotipo"></a>
-                    </div><!--logo-footer-->
-                    <div class="btn-social">
-                        <a href="https://www.instagram.com/muniz09muniz?igsh=MWQ2cXhmYjZjNDJjMw==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
-                        <button id="zap"><i class="bi bi-whatsapp"></i></button>
-                        <a href="https://www.linkedin.com/in/francisco-mateus-de-oliveira-muniz-554333233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
-                    </div><!--btn-social-->
-                </div>
-            </div><!--line-footer-->
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <a href="#header"
+                ><img src="assets/img/logo-svg-2.svg" alt="Logotipo"
+              /></a>
+            </div>
+            <!--logo-footer-->
+            <div class="btn-social">
+              <a
+                href="https://www.instagram.com/muniz09muniz?igsh=MWQ2cXhmYjZjNDJjMw=="
+                target="_blank"
+                ><button><i class="bi bi-instagram"></i></button
+              ></a>
+             <a href=""https://wa.me/+5588981252883?text=Ol%C3%A1%20MM%20TecSolutions,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento""> <button id="zap"><i class="bi bi-whatsapp"></i></button></a>
+              <a
+                href="https://www.linkedin.com/in/francisco-mateus-de-oliveira-muniz-554333233?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+            </div>
+            <!--btn-social-->
+          </div>
+        </div>
+        <!--line-footer-->
 
-            <div class="line-footer borda flex">
-                <p><i class="bi bi-envelope-fill"></i> <a href="https://mail.google.com/mail" target="_blank">mateus09muniz@gmail.com</a></p>
-                <p class="signature">Desenvolvido por <span>Mateus Muniz</span></p>
-            </div><!--line-footer-->
-        </div><!--interface-->
-        
+        <div class="line-footer borda flex">
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="https://mail.google.com/mail" target="_blank"
+              >mateus09muniz@gmail.com</a
+            >
+          </p>
+          <p class="signature">Desenvolvido por <span>Mateus Muniz</span></p>
+        </div>
+        <!--line-footer-->
+      </div>
+      <!--interface-->
     </footer>
-<script src="assets/script/script.js"></script>
-<script src="assets/script/enviar-mensagen.js"></script>
-</body>
-
+    <script src="assets/script/script.js"></script>
+    <script src="assets/script/enviar-mensagen.js"></script>
+  </body>
 </html>
