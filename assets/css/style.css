@@ -618,8 +618,14 @@ footer .line-footer p a {
     /* /////// ESTILO CABEÇALHO \\\\\\*/
 
     header{
+        
         padding: 0 4%;
         height: 100px;
+    }
+
+    header.rolagem{
+        position: absolute;
+    
     }
 
     .menu-desktop,
