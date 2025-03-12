@@ -1,19 +1,18 @@
 const btnEnviar = document.getElementById("btn-enviar");
-btnEnviar.addEventListener("click", () => {
-  const nome = document.getElementById("nome").value;
-  const email = document.getElementById("email").value;
-  const contato = document.getElementById("contato").value;
-  const texto = document.getElementById("texto").value;
-  const numeroWhatsapp = "5588981252883";
-  if (nome && email && contato && texto) {
-    const mensagem = `Olá, vim pelo seu site https://portifoliomateusmuniz.netlify.app \n\nNome: ${nome}\nEmail: ${email}\nContato: ${contato}\nMensagem: ${texto}`;
+document.getElementById("btn-enviar").addEventListener("click", (event) => {
+  event.preventDefault(); // Impede o recarregamento da página
 
-    const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(
-      mensagem
-    )}`;
+  const nome = document.getElementById("nome");
+  const email = document.getElementById("email");
+  const contato = document.getElementById("contato");
+  const texto = document.getElementById("texto");
 
-    window.open(url, "_blank");
-  } else {
+  if (
+    !nome.value.trim() ||
+    !email.value.trim() ||
+    !contato.value.trim() ||
+    !texto.value.trim()
+  ) {
     Swal.fire({
       icon: "warning",
       title: "Atenção!",
@@ -21,7 +20,21 @@ btnEnviar.addEventListener("click", () => {
       confirmButtonText: "Ok, vou preencher!",
       confirmButtonColor: "#00b9db",
     });
+    return;
   }
+
+  const numeroWhatsapp = "5588981252883";
+  const mensagem = `Olá, vim pelo seu site https://portifoliomateusmuniz.netlify.app\n\nNome: ${nome.value}\nEmail: ${email.value}\nContato: ${contato.value}\nMensagem: ${texto.value}`;
+  const url = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(
+    mensagem
+  )}`;
+
+  window.open(url, "_blank");
+
+  nome.value = "";
+  email.value = "";
+  contato.value = "";
+  texto.value = "";
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////

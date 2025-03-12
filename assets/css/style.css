@@ -520,8 +520,14 @@ form textarea {
 }
 
 form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00b9db;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
 }
 
 form .btn-enviar input {
