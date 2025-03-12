@@ -9,7 +9,9 @@ btdMenu.addEventListener("click", () => {
 
 menuMobile.addEventListener("click", () => {
   menuMobile.classList.remove("abrir-menu");
+  btdMenu.classList.toggle("active");
 });
 overlay.addEventListener("click", () => {
   menuMobile.classList.remove("abrir-menu");
+  btdMenu.classList.toggle("active");
 });
