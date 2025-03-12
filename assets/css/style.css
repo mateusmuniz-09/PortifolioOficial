@@ -585,6 +585,11 @@ footer .line-footer p a {
        margin: auto;
     }
 
+    .swiper .swiper-slide p {
+        text-align: center;
+        
+    }
+
    
     
     .btn-abrir-menu span{
@@ -669,6 +674,7 @@ footer .line-footer p a {
 
     section.topo-do-site .txt-topo-site p {
         padding: 20px 0;
+        text-align: center;
     }
 
     .topo-do-site h1 {
@@ -692,6 +698,10 @@ footer .line-footer p a {
         font-size: 20px;
         line-height: 35px;
         text-align: center;
+    }
+
+    .sobre .txt-sobre p {
+       text-align: center;
     }
     
     .btn-social{
