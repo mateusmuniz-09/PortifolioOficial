@@ -50,9 +50,10 @@ body{
  }
 
 .swiper {
-    width: 100%;
-    padding: 20px 0;
+    width: 95%;
+    padding: 8px 10px;
     height: 400px;
+    
 
 
 }
@@ -68,15 +69,68 @@ body{
     font-size: 18px;
     font-weight: bold;
     transition: .3s;
+    position: relative;
     
    
     
 }
 
-.swiper-slide:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px #ffffff78;
+.swiper-slide img{
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+position: absolute;
+z-index: -1;
+opacity: 0.2;
 }
+
+.swiper-2{
+    background-color: #000;
+    width: 100%;
+
+}
+.swiper .teste .slide-img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  
+} 
+
+.slide-img img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.slide-img p{
+position: absolute;
+bottom: 0;
+padding-bottom: 3rem;
+
+}
+.slide-img .texto-slide{
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.slide-img{
+    width: 100%;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+
+}
+
+
 
 .swiper-slide h3{
 font-size: 20px;
@@ -114,7 +168,7 @@ color: #fff;
 
 .interface {
     max-width: 1600px;
-    margin: 0 200px; 
+   
 }
 
 .flex {
@@ -585,11 +639,21 @@ footer .line-footer p a {
 
   @media screen and (max-width: 768px) {
 
+    .servicos{
+        padding: 0;
+    }
+
     .swiper {
-        width: 90%;
+        width: 95%;
         position: relative;
        margin: auto;
     }
+    .slide-img{
+        background-color: #000;
+        border: none;
+        box-shadow: none;
+    }
+
 
     .swiper .swiper-slide p {
         text-align: center;
@@ -691,10 +755,11 @@ footer .line-footer p a {
 
     .topo-do-site h1 {
         font-size: 20px;
+        padding: 20px 4%;
     }
     .topo-do-site .img-topo-site img {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         box-shadow: 0 0 12px #00b9db;
     }
      /* ESPECIALIDADES */
@@ -704,6 +769,7 @@ footer .line-footer p a {
     
     section.sobre {
         padding: 80px 8%;
+        align-items: center;
     }
 
     .sobre .txt-sobre h2 {
@@ -719,9 +785,16 @@ footer .line-footer p a {
     .btn-social{
         text-align: center;
     }
+    .sobre .interface .flex .img-sobre{
+        width: 60%;
+        height: 200px;
+    }
 
     .img-sobre img{
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+        margin: auto;
     }
 
     /* PORTFÓLIO */

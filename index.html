@@ -10,6 +10,12 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+    <!-- ///////////////// animação na tela //////////// -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- ///////////////// animação na tela //////////// -->
+
 
     <!-- FIM BOOTSTRAP ICONS -->
     <link
@@ -86,7 +92,7 @@
     </header>
 
     <main id="topo">
-      <section class="topo-do-site">
+      <section class="topo-do-site" data-aos="fade-up" data-aos-duration="1000">
         <div class="inteface">
           <div class="flex">
             <div class="txt-topo-site">
@@ -113,11 +119,12 @@
       </section>
       <!--topo-site-->
 
-      <section class="servicos" id="servicos">
-        <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
+      <section class="servicos" id="servicos" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="titulo" >MINHAS <span>ESPECIALIDADES</span></h2>
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
+              <img src="assets/img/landing-page-slide.jpg" alt="">
               <i class="bi bi-code-square"></i>
               <h3>Website</h3>
               <p>
@@ -128,6 +135,7 @@
               </p>
             </div>
             <div class="swiper-slide">
+              <img src="assets/img/loja-online-slide.jpg" alt="">
               <i class="bi bi-cart"></i>
               <h3>Loja Online</h3>
               <p>
@@ -138,6 +146,7 @@
               </p>
             </div>
             <div class="swiper-slide">
+              <img src="assets/img/landing-page-slide.jpg" alt="">
               <i class="bi bi-filetype-html"></i>
               <h3>Landing Pages</h3>
               <p>
@@ -148,6 +157,7 @@
               </p>
             </div>
             <div class="swiper-slide">
+              <img src="assets/img/site-institucional.jpg" alt="">
               <i class="bi bi-building"></i>
               <h3>Sites Institucionais</h3>
               <p>
@@ -207,7 +217,7 @@
           </div>
         </div>
       </section> -->
-      <section class="sobre" id="sobre">
+      <section class="sobre" id="sobre" data-aos="fade-up" data-aos-duration="1000">
         <div class="interface">
           <div class="flex">
             <div class="img-sobre">
@@ -250,7 +260,22 @@
           </div>
         </div>
       </section>
-      <section class="portfolio" id="projetos">
+      <div class="swiper swiper-2" data-aos="fade-up" data-aos-duration="1000">
+        <div class="swiper-wrapper teste">
+          <div class="swiper-slide slide-img"><img src="assets/img/slide-html.png" alt=""><p class="texto-slide">HTML</p></div>
+          <div class="swiper-slide slide-img"><img src="assets/img/slide-css.png" alt=""><p class="texto-slide">CSS</p></div>
+          <div class="swiper-slide slide-img"><img src="assets/img/slide-javascript.png" alt=""> <p class="texto-slide">JavaScript</p></div>
+          <div class="swiper-slide slide-img"><img src="assets/img/slide-vscode.png" alt=""><p class="texto-slide">VsCode</p></div>
+          <div class="swiper-slide slide-img"><img src="assets/img/slide-github.png" alt=""><p class="texto-slide">GitHub</p></div>
+          <div class="swiper-slide slide-img"><img src="assets/img/slide-nodejs.png" alt=""><p class="texto-slide">NodeJs</p></div>
+        </div>
+  
+        <!-- Paginação e Botões de Navegação -->
+        <div class="swiper-pagination"></div>
+       <!--  <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+      </div>
+      <section class="portfolio" id="projetos" data-aos="fade-up" data-aos-duration="1000">
         <div class="interface">
           <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
           <div class="flex div-portifolio">
@@ -297,7 +322,7 @@
       </section>
       <!--portfolio-->
 
-      <section class="formulario" id="contatos">
+      <section class="formulario" id="contatos" data-aos="fade-up" data-aos-duration="1000">
         <div class="interface">
           <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
@@ -330,7 +355,7 @@
       <!--formulario-->
     </main>
 
-    <footer>
+    <footer id="contatos" data-aos="fade-up" data-aos-duration="1000">
       <div class="interface">
         <div class="line-footer">
           <div class="flex">
@@ -373,5 +398,12 @@
     </footer>
     <script src="assets/script/script.js"></script>
     <script src="assets/script/enviar-mensagen.js"></script>
+    <!-- ////////////////////////script animação tela//////////////// -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+     <!-- ////////////////////////script animação tela//////////////// -->
   </body>
 </html>
