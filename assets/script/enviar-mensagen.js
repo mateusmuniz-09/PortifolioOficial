@@ -1,4 +1,4 @@
-const btnEnviar = document.getElementById("btn-enviar");
+/* const btnEnviar = document.getElementById("btn-enviar");
 document.getElementById("btn-enviar").addEventListener("click", (event) => {
   event.preventDefault(); // Impede o recarregamento da página
 
@@ -35,7 +35,7 @@ document.getElementById("btn-enviar").addEventListener("click", (event) => {
   email.value = "";
   contato.value = "";
   texto.value = "";
-});
+}); */
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
